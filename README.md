@@ -31,8 +31,8 @@ _This application is a rails-based product review site for a fictional italian, 
     - [x] reviews have author, content_body and rating(between 1 and 5)
 - [ ] Landing page includes basic info about company and offers easy site-wide navigation
     - [ ] Includes the three most recently added products and the product with the most reviews
-- [ ] Product section includeslist of all products
-    - [ ] Each product is clickable
+- [ ] Product section includes list of all products
+    - [ ] Each product is click-able
         - [ ] should be able to add, update and delete new products
         - [ ] users should be able to add a review
 - [ ] Scopes should be used to display the product with most reviews, three most recently added products and all products made in usa
