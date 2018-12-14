@@ -5,6 +5,12 @@
 <p>Cost: $<%= @product.cost %></p>
 <p>Origin: <%= @product.origin %></p>
 
+
+<div class="update">
+  <h4>Update Product</h4>
+  <%= render 'products/form'%>
+</div>
+
 <div class="reviews">
   <h4>User Reviews</h4>
   <ol>
