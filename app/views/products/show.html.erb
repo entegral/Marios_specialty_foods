@@ -11,6 +11,11 @@
   <%= render 'products/form'%>
 </div>
 
+<div class="destroy">
+  <h4>Delete Product</h4>
+  <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "Are you sure?", :method => "delete"} %></p>
+</div>
+
 <div class="reviews">
 
   <h4>Add a Review</h4>
