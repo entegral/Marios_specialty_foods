@@ -25,7 +25,7 @@ _This application is a rails-based product review site for a fictional italian, 
 
 ### Grading Criteria
 
-- [ ] Database has both products and reviews.
+- [x] Database has both products and reviews.
     - [x] Products have one to many relationship with reviews
     - [x] Products have name, cost and country of origin
     - [x] reviews have author, content_body and rating(between 1 and 5)
