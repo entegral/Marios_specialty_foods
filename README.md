@@ -37,11 +37,11 @@ _This application is a rails-based product review site for a fictional italian, 
         - [ ] users should be able to add a review
 - [ ] Scopes should be used to display the product with most reviews, three most recently added products and all products made in usa
 - [ ] Validations
-    - [ ] all product-fields should be filled out, including rating
-    - [ ] Rating can only be an integer between 1 and 5
-    - [ ] a review's content_body must be between 50 and 250 characters
-- [ ] Project should include seed data for 50 products and 250 reviews
-  - [ ] Use Faker with a loop to seed Database
+    - [x] all product-fields should be filled out, including rating
+    - [x] Rating can only be an integer between 1 and 5
+    - [x] a review's content_body must be between 50 and 250 characters
+- [x] Project should include seed data for 50 products and 250 reviews
+  - [x] Use Faker with a loop to seed Database
 - [ ] Overall site styling should be presentable
 
 ## Bonus Objectives
