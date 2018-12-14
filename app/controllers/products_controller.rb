@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   end
 
   def index
+    @products = Product.all
   end
 
   def create
@@ -16,6 +17,8 @@ class ProductsController < ApplicationController
   end
 
   def show
+    @product = Product.find(params[:id])
+    @reviews = @product.reviews
   end
 
   def update

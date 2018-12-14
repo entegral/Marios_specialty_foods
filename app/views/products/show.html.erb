@@ -1,1 +1,21 @@
-<h1>show Page</h1>
+<a href="/products"><< Back</a>
+
+<h1><%= @product.name %> Info Page</h1>
+
+<p>Cost: $<%= @product.cost %></p>
+<p>Origin: <%= @product.origin %></p>
+
+<div class="reviews">
+  <h4>User Reviews</h4>
+  <ol>
+    <% @reviews.each do |review| %>
+    <li>
+      <ul>
+        <li> Author: <%= review.author %></li>
+        <li> Rating: <%= review.rating %></li>
+        <li> Review: <%= review.content_body %></li>
+      </ul>
+    </li>
+    <% end %>
+  </ol>
+</div>
