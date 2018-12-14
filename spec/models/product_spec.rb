@@ -39,9 +39,23 @@ describe ('Product') do
 
     end
   end
-  #
-  # describe('.new3') do
-  #
-  # end
+
+  describe('.new3') do
+    it("returns the 3 newest products added to the db") do
+
+      p1 = Product.create(name: Faker::Food.dish, cost: Faker::Number.number(1), origin: Faker::Address.country)
+      p2 = Product.create(name: Faker::Food.dish, cost: Faker::Number.number(1), origin: Faker::Address.country)
+      p3 = Product.create(name: Faker::Food.dish, cost: Faker::Number.number(1), origin: Faker::Address.country)
+      p4 = Product.create(name: Faker::Food.dish, cost: Faker::Number.number(1), origin: Faker::Address.country)
+
+      query = Product.new3
+
+      expect(query).to include(p2)
+      expect(query).to include(p3)
+      expect(query).to include(p4)
+      expect(query).to_not include(p1)
+
+    end
+  end
 
 end
