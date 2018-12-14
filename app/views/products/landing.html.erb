@@ -1,21 +1,22 @@
-<h2>Here at Marios we pride ourselves on making the best pastries while also providing you with the highest quality plumbing supplies outside of italy. Trust us, we've been building aquaducts for over 1500 years (and a lot of them still work today).</h2>
 
-<a href="/products">All Products</a>
+<div class="landing">
 
-<div class="top5">
-  <h4>Today's Top Tasty Treats</h4>
-  <ol>
-    <% @top5.each do |each| %>
-    <li> <a href="/products/<%= each.id %>"> <%= each.name %> </a></li>
-    <% end %>
-  </ol>
-</div>
+  <div class="scope_block">
+    <h4>Mario's Most Popular Meals</h4>
+    <ol>
+      <% @top5.each do |each| %>
+      <li> <a href="/products/<%= each.id %>"> <%= each.name %> </a></li>
+      <% end %>
+    </ol>
+  </div>
 
-<div class="new3">
-  <h4>3 Newest Menu Additions</h4>
-  <ol>
-    <% @new3.each do |each| %>
-    <li> <a href="/products/<%= each.id %>"> <%= each.name %> </a></li>
-    <% end %>
-  </ol>
+  <div class="scope_block">
+    <h4>Newest Menu Additions</h4>
+    <ol>
+      <% @new3.each do |each| %>
+      <li> <a href="/products/<%= each.id %>"> <%= each.name %> </a></li>
+      <% end %>
+    </ol>
+  </div>
+
 </div>

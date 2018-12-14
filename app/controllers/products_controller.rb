@@ -1,6 +1,8 @@
 class ProductsController < ApplicationController
 
   def landing
+    @lead = "Here at Marios we pride ourselves on making the best pastries while also providing you with the highest quality plumbing supplies outside of italy. Trust us, we've been building aquaducts for over 1500 years (and a lot of them still work today)."
+
     @top5 = Product.top5
     @new3 = Product.new3
   end

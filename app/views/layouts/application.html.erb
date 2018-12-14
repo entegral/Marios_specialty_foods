@@ -9,11 +9,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <header>
-    <h1>Mario's Plumbing and Pastry Shoppe</h1>
-  </header>
 
   <body>
-    <%= yield %>
+    <div class="jumbotron">
+      <h1 class="display-4">Mario's Plumbing and Pastry Shoppe</h1>
+      <p class="lead"> <% if @lead %> <%= @lead %> <% end %> </p>
+      <hr class="my-4">
+      <a href="/products">View All Products</a>
+    </div>
+      <%= yield %>
+
   </body>
 </html>

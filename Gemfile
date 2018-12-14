@@ -37,6 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'execjs'
 gem 'jquery-rails'
+gem 'bootstrap'
+gem 'sprockets-rails'
 
 
 group :development, :test do
