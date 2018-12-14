@@ -1,7 +1,8 @@
 class ProductsController < ApplicationController
 
   def landing
-    @top3 = Product.top3
+    @top5 = Product.top5
+    @new3 = Product.new3
   end
 
   def index

@@ -2,10 +2,19 @@
 
 <a href="/products">All Products</a>
 
-<div class="top3">
+<div class="top5">
   <h4>Today's Top Tasty Treats</h4>
   <ol>
-    <% @top3.each do |each| %>
+    <% @top5.each do |each| %>
+    <li> <a href="/products/<%= each.id %>"> <%= each.name %> </a></li>
+    <% end %>
+  </ol>
+</div>
+
+<div class="new3">
+  <h4>3 Newest Menu Additions</h4>
+  <ol>
+    <% @new3.each do |each| %>
     <li> <a href="/products/<%= each.id %>"> <%= each.name %> </a></li>
     <% end %>
   </ol>
