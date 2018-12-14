@@ -12,6 +12,11 @@
 </div>
 
 <div class="reviews">
+
+  <h4>Add a Review</h4>
+  <%= render 'reviews/form'%>
+
+
   <h4>User Reviews</h4>
   <ol>
     <% @reviews.each do |review| %>

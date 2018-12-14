@@ -1,0 +1,9 @@
+<%= form_for [@product, @review] do |t| %>
+  <%= t.label :author %>
+  <%= t.text_field :author %>
+  <%= t.label :content_body %>
+  <%= t.text_field :content_body %>
+  <%= t.label :rating %>
+  <%= t.text_field :rating %>
+  <%= t.submit %>
+<% end %>

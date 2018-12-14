@@ -4,6 +4,10 @@ class ReviewsController < ApplicationController
   end
 
   def create
+    @product = Product.find(params[:product_id])
+    new_review = @product.reviews.new(review_params)
+    new_review.save
+    redirect_to product_path(@product)
   end
 
   def new
@@ -19,6 +23,11 @@ class ReviewsController < ApplicationController
   end
 
   def destroy
+  end
+
+  private
+  def review_params
+    params.require(:review).permit(:author, :content_body, :rating)
   end
 
 end
