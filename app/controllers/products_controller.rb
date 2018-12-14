@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 
   def landing
+    @top3 = Product.top3
   end
 
   def index
