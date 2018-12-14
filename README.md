@@ -27,8 +27,8 @@ _This application is a rails-based product review site for a fictional italian, 
 
 - [ ] Database has both products and reviews.
     - [ ] Products have one to many relationship with reviews
-    - [ ] Products have name, cost and country of origin
-    - [ ] reviews have author, content_body and rating(between 1 and 5)
+    - [x] Products have name, cost and country of origin
+    - [x] reviews have author, content_body and rating(between 1 and 5)
 - [ ] Landing page includes basic info about company and offers easy site-wide navigation
     - [ ] Includes the three most recently added products and the product with the most reviews
 - [ ] Product section includeslist of all products
