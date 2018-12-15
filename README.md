@@ -10,15 +10,15 @@ _This application is a rails-based product review site for a fictional italian, 
 
 ### Easy Method
 
-* Go to this [insert heroku link to deployment here](#)
+* Go to this [link](https://floating-mountain-86456.herokuapp.com/)
 
 ### Hard Method
 
 * _Log in to GitHub_
 * _Clone GitHub URL in terminal_
 * _Run Bundler to install necessary gems_
-* _```cd``` into the root directory and type ```ruby app.rb``` to run sinatra_
-* _Navigate to http://localhost:4567 in your browser to view the application_
+* _run ```rails s``` in your terminal_
+* _Navigate to http://localhost:3000 in your browser to view the application_
 
 
 ## Learning Objectives
