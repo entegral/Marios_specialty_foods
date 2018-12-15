@@ -1,37 +1,62 @@
-<a href="/products"><< Back</a>
-
-<h1><%= @product.name %> Info Page</h1>
-
-<p>Cost: $<%= @product.cost %></p>
-<p>Origin: <%= @product.origin %></p>
 
 
-<div class="update">
-  <h4>Update Product</h4>
-  <%= render 'products/form'%>
-</div>
-
-<div class="destroy">
-  <h4>Delete Product</h4>
-  <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "Are you sure?", :method => "delete"} %></p>
-</div>
-
-<div class="reviews">
-
-  <h4>Add a Review</h4>
-  <%= render 'reviews/form'%>
+<div class="erb_div show-page">
 
 
-  <h4>User Reviews</h4>
-  <ol>
-    <% @reviews.each do |review| %>
-    <li>
-      <ul>
-        <li> Author: <%= review.author %></li>
-        <li> Rating: <%= review.rating %></li>
-        <li> Review: <%= review.content_body %></li>
-      </ul>
-    </li>
-    <% end %>
-  </ol>
+  <div class="row show_divs">
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Update Product</h5>
+          <%= render 'products/form'%>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Add a Review</h5>
+          <%= render 'reviews/form'%>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Delete Product</h5>
+          <p id="delete"><%= link_to "Delete", product_path(@product), :data => {:confirm => "Are you sure?", :method => "delete"} %></p>
+        </div>
+      </div>
+
+  </div>
+
+<br>
+
+
+
+  <div class="row user_reviews">
+
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">User Reviews</h4>
+        <ol>
+          <% @reviews.each do |review| %>
+          <li>
+            <ul>
+              <div class="card">
+                <div class="card-body review">
+                  <li> <strong>Author:</strong> <%= review.author %></li>
+                  <li> <strong>Rating:</strong> <%= review.rating %></li>
+                  <li> <strong>Review:</strong> <%= review.content_body %></li>
+                </div>
+              </div>
+              <br>
+            </ul>
+          </li>
+          <% end %>
+        </ol>
+      </div>
+    </div>
+
+
+  </div>
+
 </div>

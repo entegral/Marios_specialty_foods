@@ -14,15 +14,67 @@
 
 @import "bootstrap";
 
+body {
+
+}
+
 .jumbotron {
   text-align: center;
+  background-color: #ddd;
+
 }
 
 .scope_block {
   display: inline-grid;
 }
 
+#header-links li a{
+  font-size: 1.2em;
+}
+
+
+.erb_div {
+  margin: 25px;
+}
+
+.show_divs {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.show_divs .card {
+  background-color: #eee;
+
+}
+
+#delete {
+  text-align: center;
+}
+.review {
+  padding: 50px;
+  background-color: #eee;
+}
+
+.user_reviews h4 {
+  text-align: center;
+}
+
 .landing {
   display: flex;
   justify-content: space-evenly;
+}
+
+.erb_contents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0.5em;
+}
+
+form * {
+  margin: 5px;
 }

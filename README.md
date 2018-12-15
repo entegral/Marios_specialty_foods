@@ -35,24 +35,19 @@ _This application is a rails-based product review site for a fictional italian, 
     - [x] Each product is click-able
         - [x] should be able to add, update and delete new products
         - [x] users should be able to add a review
-- [ ] Scopes should be used to display the product with most reviews, three most recently added products and all products made in usa
+- [x] Scopes should be used to display the product with most reviews, three most recently added products and all products made in usa
 - [x] Validations
     - [x] all product-fields should be filled out, including rating
     - [x] Rating can only be an integer between 1 and 5
     - [x] a review's content_body must be between 50 and 250 characters
 - [x] Project should include seed data for 50 products and 250 reviews
   - [x] Use Faker with a loop to seed Database
+- [ ] Implement Flash Messages  
 - [ ] Overall site styling should be presentable
 
 ## Bonus Objectives
 
-- [x] Make the site kid-friendly! It's up to you to decide what that means.
-- [x] Add a property to each Word that allows kids to link a picture.
-- [x] Allow kids to sort Words alphabetically.
-- [x] Allow kids to search for a particular Word in your application.
-- [x] Search feature returns error page if search result is not in the list.
-- [x] Include a page where kids can view all Words and their corresponding Definitions in one list.
-- [x] Include a randomizer method where kids can click a button and randomly look at a Word
+- [ ]
 
 ## Technologies Used
 _GitHub, Ruby_

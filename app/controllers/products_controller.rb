@@ -2,12 +2,14 @@ class ProductsController < ApplicationController
 
   def landing
     @lead = "Here at Marios we pride ourselves on making the best pastries while also providing you with the highest quality plumbing supplies outside of italy. Trust us, we've been building aquaducts for over 1500 years (and a lot of them still work today)."
-
+    @landing = "active"
     @top5 = Product.top5
     @new3 = Product.new3
   end
 
   def index
+    @lead = "Products Page"
+    @index = "active"
     @products = Product.all
     @product = Product.new
   end
@@ -28,6 +30,7 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @review = Review.new
     @reviews = @product.reviews
+    @lead = @product.name
   end
 
   def update

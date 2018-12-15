@@ -1,16 +1,18 @@
-<a href="/">Home</a>
 
-<h1>Products Page</h1>
+<div class="erb_contents erb_div">
 
-<div class="add_product">
-  <%= render 'products/form'%>
-</div>
+  <div class="add_product">
+    <h4>Add a Product to Mario's Menu</h4>
+    <%= render 'products/form'%>
+  </div>
 
-<div class="products">
-  <h4>All of Mario's Offerings</h4>
-  <ol>
-    <% @products.each do |product| %>
-    <li> <a href="/products/<%= product.id %>"> <%= product.name %> </a></li>
-    <% end %>
-  </ol>
+  <div class="products">
+    <h4>All of Mario's Offerings</h4>
+    <ol>
+      <% @products.each do |product| %>
+      <li> <a href="/products/<%= product.id %>"> <%= product.name %> </a></li>
+      <% end %>
+    </ol>
+  </div>
+
 </div>
