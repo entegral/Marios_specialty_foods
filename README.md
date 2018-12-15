@@ -42,12 +42,8 @@ _This application is a rails-based product review site for a fictional italian, 
     - [x] a review's content_body must be between 50 and 250 characters
 - [x] Project should include seed data for 50 products and 250 reviews
   - [x] Use Faker with a loop to seed Database
-- [ ] Implement Flash Messages  
-- [ ] Overall site styling should be presentable
-
-## Bonus Objectives
-
-- [ ]
+- [x] Overall site styling should be presentable
+- [x] Deployed to Heroku
 
 ## Technologies Used
 _GitHub, Ruby_
