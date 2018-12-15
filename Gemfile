@@ -39,6 +39,7 @@ gem 'execjs'
 gem 'jquery-rails'
 gem 'bootstrap'
 gem 'sprockets-rails'
+gem 'faker'
 
 
 group :development, :test do
@@ -48,7 +49,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'launchy'
   gem 'shoulda-matchers'
-  gem 'faker'
 end
 
 group :development do
